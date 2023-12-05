@@ -1,0 +1,1 @@
+const drawingArea = document.querySelectorAll('#drawingArea')
