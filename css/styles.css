@@ -114,4 +114,9 @@ input[type="range"]::-moz-range-thumb {
 
 #drawingArea{
   display: grid;
+  height: 100%;
+}
+
+.drawingAreaElement:hover{
+  background-color: black;
 }
