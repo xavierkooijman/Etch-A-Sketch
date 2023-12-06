@@ -2,10 +2,25 @@ const drawingArea = document.querySelector('#drawingArea')
 const slider = document.querySelector('#slider')
 const sliderText = document.querySelector('#sliderText')
 const colorPicker = document.querySelector('#colorPicker')
+const drawButton = document.querySelector('#drawButton')
+const eraseButton = document.querySelector('#eraseButton')
+const clearButton = document.querySelector('#clearButton')
 
 let rangeValue = slider.value
 let colorValue = colorPicker.value
 let checkMouseDown = false
+
+drawButton.addEventListener('click', () =>{
+  colorValue = colorPicker.value
+})
+
+eraseButton.addEventListener('click', () =>{
+  colorValue = 'whitesmoke'
+})
+
+clearButton.addEventListener('click', () => {
+  updateDrawingAreaElements(rangeValue)
+})
 
 slider.addEventListener('input', () => {
   rangeValue = slider.value
