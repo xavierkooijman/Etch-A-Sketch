@@ -26,6 +26,10 @@ button{
   width: 200px;
 }
 
+button, input{
+  cursor: pointer;
+}
+
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
